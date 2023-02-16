@@ -121,7 +121,7 @@ final class PerceptualHash2 implements Implementation
 
         $pixels = $this->diagonalMatrix($matrix, $matrixSize);
 
-        $pixels = array_slice($pixels, 1, 64); // discard first and cut to size
+        $pixels = array_slice($pixels, 1, 63); // discard first and cut to size
 
         $compare = $this->average($pixels);
 
